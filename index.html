@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Student Report — @EkhwanAlEraqion</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'Segoe UI',Tahoma,sans-serif;background:#0d1117;color:#c9d1d9;display:flex;justify-content:center;align-items:center;min-height:100vh}
+.card{background:#161b22;border:1px solid #30363d;border-radius:16px;padding:40px;max-width:500px;text-align:center;box-shadow:0 8px 32px rgba(0,0,0,0.4)}
+.emoji{font-size:3em;margin-bottom:16px}
+h1{color:#f0883e;font-size:1.4em;margin-bottom:8px}
+p{color:#8b949e;margin:4px 0;font-size:0.95em}
+.target{color:#3fb950;font-weight:700;margin:12px 0;font-size:1.05em}
+.countdown{font-size:2.5em;font-weight:700;color:#f0883e;margin:20px 0}
+.bar{height:6px;background:#21262d;border-radius:3px;margin:16px 0;overflow:hidden}
+.bar-fill{height:100%;background:linear-gradient(90deg,#f0883e,#ff6a33);width:0%;transition:width 1s linear}
+.skip{background:#21262d;color:#8b949e;border:1px solid #30363d;padding:12px 24px;border-radius:8px;font-size:0.95em;cursor:pointer;margin-top:12px}
+.skip:hover{background:#30363d;color:#c9d1d9}
+</style>
+</head>
+<body>
+<div class="card">
+<div class="emoji">📚</div>
+<h1>University Student — My Life Is Over</h1>
+<p>abuse@telegram.org</p>
+<div class="target">@EkhwanAlEraqion — 274+ posts of doxxing</div>
+<div class="countdown" id="cd">5</div>
+<div class="bar"><div class="bar-fill" id="bar"></div></div>
+<button class="skip" onclick="go()">Send now</button>
+</div>
+<script>
+var to='abuse@telegram.org';
+var su='University student photos and phone number published by @EkhwanAlEraqion without consent - my education and future are destroyed';
+var body='Dear Telegram Abuse Team,\n\n' +
+'I am a 21 year old university student. I should be studying for my exams right now. Instead I am writing this because a channel on your platform published my phone number and my private photos to over 1,800 strangers.\n\n' +
+'Last month someone I trusted shared my photos with others. Those photos ended up on @EkhwanAlEraqion. With my phone number. With my Telegram username. Everything a stranger needs to find me, contact me, and harass me.\n\n' +
+'I found out because my classmates started looking at me differently. Then someone I do not know sent me a message saying they saw my photos on this channel. I felt the floor disappear under my feet.\n\n' +
+'I have not been to class in three weeks. I cannot look my professor in the eye. My parents do not know yet but they will. When they find out everything I worked for — my degree, my reputation, my future — will mean nothing to them.\n\n' +
+'CHANNEL DETAILS:\n' +
+'Name: @EkhwanAlEraqion\n' +
+'Channel ID: -1001271142828\n' +
+'URL: https://t.me/EkhwanAlEraqion\n' +
+'Backup: @ekhvan_forever (ID: 4498113647)\n\n' +
+'VIOLATIONS:\n' +
+'1. My private photos were shared without my consent — photos I took for myself, not for 1,800 strangers\n' +
+'2. My personal phone number was published — strangers call me at midnight asking things I will not write here\n' +
+'3. My Telegram username was posted alongside my phone number — anyone can find me on any platform now\n' +
+'4. Sexual and degrading captions were added to my photos — I did not agree to any of this\n' +
+'5. The channel has 274+ posts doing this to other women — I am not the only student suffering like this\n\n' +
+'EVIDENCE:\n' +
+'https://t.me/EkhwanAlEraqion/1\n' +
+'https://t.me/EkhwanAlEraqion/147\n' +
+'https://t.me/EkhwanAlEraqion/271\n' +
+'https://t.me/EkhwanAlEraqion/251\n' +
+'https://t.me/EkhwanAlEraqion/161\n\n' +
+'I did everything right. I studied hard. I stayed out of trouble. And now a channel on your platform is destroying everything I built because someone decided my private life was entertainment.\n\n' +
+'I am asking you:\n' +
+'1. Remove this channel immediately\n' +
+'2. Ban the person who did this\n' +
+'3. Delete my photos and phone number from your servers\n' +
+'4. Preserve evidence before they delete it\n' +
+'5. Ban the backup channel @ekhvan_forever\n\n' +
+'I do not know if I can continue my education after this. I do not know if my family will forgive me. I do not know anything anymore except that this channel is ruining lives and someone needs to stop it.\n\n' +
+'Please. I am just a student. I just want to go back to class.\n\n' +
+'Regards,\nA student whose future was stolen';
+
+function go(){window.location.href='mailto:'+to+'?subject='+encodeURIComponent(su)+'&body='+encodeURIComponent(body)}
+var s=5;var el=document.getElementById('cd');var bf=document.getElementById('bar');
+var iv=setInterval(function(){s--;el.textContent=s;bf.style.width=((5-s)/5)*100+'%';if(s<=0){clearInterval(iv);go()}},1000);
+</script>
+</body>
+</html>
